@@ -1,4 +1,4 @@
-# vue-youtube
+# finance-app
 
 ## Project setup
 ```
