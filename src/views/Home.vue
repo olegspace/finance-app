@@ -8,6 +8,8 @@
       </button>
     </div>
 
+    <!-- <Loader v-if="loading"/> -->
+
     <div class="row">
       <HomeBill />
       <HomeCurrency />
@@ -20,6 +22,10 @@ import HomeBill from "@/components/HomeBill";
 import HomeCurrency from "@/components/HomeCurrency";
 export default {
   name: "home",
+  data: () => ({
+    loading: true,
+    currency: null
+  }),
   components: {
     HomeBill,
     HomeCurrency
