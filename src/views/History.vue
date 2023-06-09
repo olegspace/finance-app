@@ -5,14 +5,14 @@
     </div>
 
     <div class="history-chart">
-      <canvas></canvas>
+      <!-- <canvas></canvas> -->
     </div>
 
     <Loader v-if="loading" />
 
     <p class="center" v-else-if="!records.length">
       Записей пока нет.
-      <router-link to="./record">Добавить запись</router-link>
+      <router-link to="./record/">Добавить запись</router-link>
     </p>
 
     <section v-else>
