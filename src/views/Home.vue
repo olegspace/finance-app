@@ -3,16 +3,16 @@
     <div class="page-title">
       <h3>Счет</h3>
 
-      <button class="btn waves-effect waves-light btn-small">
+      <button class="btn waves-effect waves-light btn-small" @click="refresh">
         <i class="material-icons">refresh</i>
       </button>
     </div>
 
-    <!-- <Loader v-if="loading"/> -->
+    <Loader v-if="loading" />
 
-    <div class="row">
-      <HomeBill />
-      <HomeCurrency />
+    <div v-else class="row">
+      <HomeBill :rates="currency.rates" />
+      <HomeCurrency :rates="currency.rates" :date="currency.date" />
     </div>
   </div>
 </template>
@@ -26,6 +26,20 @@ export default {
     loading: true,
     currency: null
   }),
+  async mounted() {
+    console.log("Долши до валют");
+    this.currency = await this.$store.dispatch("fetchCurrency");
+    console.log(this.currency);
+    this.loading = false;
+  },
+  methods: {
+    async refresh() {
+      this.loading = true;
+      this.currency = await this.$store.dispatch("fetchCurrency");
+      this.loading = false;
+    }
+  },
+
   components: {
     HomeBill,
     HomeCurrency

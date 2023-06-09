@@ -5,6 +5,7 @@
     </div>
     <section>
       <div class="row">
+        
         <div class="col s12 m6">
           <div>
             <div class="page-subtitle">
@@ -37,6 +38,7 @@
             </form>
           </div>
         </div>
+
         <div class="col s12 m6">
           <div>
             <div class="page-subtitle">
