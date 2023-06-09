@@ -78,7 +78,7 @@
         </label>
       </p>
     </div>
-    <div class="card-action">
+    <div class="card-action rounded">
       <div>
         <button class="btn waves-effect waves-light auth-submit" type="submit">
           Зарегистрироваться

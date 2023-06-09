@@ -13,9 +13,11 @@
 }
 .auth-card {
   width: 500px;
+  border-radius: 5%;
 }
 .auth-submit {
   width: 100%;
+  border-radius: 5%;
 }
 .helper-text.invalid {
   color: #f44336;
@@ -132,7 +134,7 @@
   cursor: pointer;
 }
 .form {
-  max-width: 500px;
+  max-width: 400px;
 }
 .breadcrumb-wrap,
 .breadcrumb-wrap a,
@@ -157,4 +159,10 @@
 .history-chart {
   max-width: 600px;
   margin: 0 auto;
+}
+.rounded {
+  border-radius: 15% !important;
+}
+.grey_ {
+  background-color: #9c9c9c;
 }

@@ -1,7 +1,7 @@
 <template>
   <form class="card auth-card" @submit.prevent="submitHandler">
     <div class="card-content">
-      <span class="card-title">Домашняя бухгалтерия</span>
+      <span class="card-title center">Приложение для учёта финансов</span>
       <div class="input-field">
         <input
           id="email"
@@ -55,7 +55,7 @@
         </small>
       </div>
     </div>
-    <div class="card-action">
+    <div class="card-action rounded">
       <div>
         <button class="btn waves-effect waves-light auth-submit" type="submit">
           Войти

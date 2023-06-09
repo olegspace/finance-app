@@ -1,5 +1,5 @@
 <template>
-  <ul class="sidenav app-sidenav" :class="{open: value}">
+  <ul class="sidenav app-sidenav" :class="{ open: value }">
     <router-link
       v-for="link in links"
       :key="link.url"
@@ -8,14 +8,14 @@
       :to="link.url"
       :exact="link.exact"
     >
-      <a href="#" class="waves-effect waves-orange pointer">{{ link.title }}</a>
+      <a href="#" class="waves-effect waves-teal pointer">{{ link.title }}</a>
     </router-link>
   </ul>
 </template>
 
 <script>
 export default {
-  props: ['value'],
+  props: ["value"],
   data: () => ({
     links: [
       { title: "Счет", url: "/", exact: true },
