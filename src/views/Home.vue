@@ -27,9 +27,7 @@ export default {
     currency: null
   }),
   async mounted() {
-    console.log("Долши до валют");
     this.currency = await this.$store.dispatch("fetchCurrency");
-    console.log(this.currency);
     this.loading = false;
   },
   methods: {
